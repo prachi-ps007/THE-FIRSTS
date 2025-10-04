@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-image: url(https://i.pinimg.com/736x/6a/5f/9a/6a5f9afa51b9ec4d6e3ebf6c9256065d.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 30vh;
+            width: 100vw;
+            box-sizing: border-box;
+        }
+
+
+  @keyframes rotateCircle {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  .place {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+  }
+
+  
+  .head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+  }
+
+  
+  .book {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: rotateCircle 10s linear infinite; 
+  }
+
+  .books img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform-origin: 0 0; 
+  }
+
+  
+  .books:nth-child(1) img { transform: rotate(0deg)   translate(200px) rotate(0deg); }
+  .books:nth-child(2) img { transform: rotate(72deg)  translate(200px) rotate(-72deg); }
+  .books:nth-child(3) img { transform: rotate(144deg) translate(200px) rotate(-144deg); }
+  .books:nth-child(4) img { transform: rotate(216deg) translate(200px) rotate(-216deg); }
+  .books:nth-child(5) img { transform: rotate(288deg) translate(200px) rotate(-288deg); }
+</style>
+</head>
+<body>
+    
+
+
+  <div class="place">
+    <a href="harrypotter.html">
+      <img src="HP.png" class="head" />
+    </a>
+
+    <div class="book">
+      <div class="books"><img src="book.png" /></div>
+      <div class="books"><img src="book.png" /></div>
+      <div class="books"><img src="book.png" /></div>
+      <div class="books"><img src="book.png" /></div>
+      <div class="books"><img src="book.png" /></div>
+    </div>
+  </div>
+</body>
+
+
+</html>
