@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARRY POTTER</title>
+    <style>
+        body{
+            background-image: url(https://i.pinimg.com/736x/51/77/41/517741a14273f8b85dcacf4a120ccf42.jpg);
+            background-size: cover;   
+            background-position: center; 
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            box-sizing: border-box;
+        
+        }
+
+        .harry{
+            animation: moveAcross 8s cubic-bezier(0.96,-0.47, 0, 1.41) infinite;
+            position:relative;
+        }
+
+        @keyframes moveAcross {
+        0% {
+         transform: translate(1200px, 690px); 
+         }
+        25% {
+        transform: translate(0,690px); 
+        }
+
+        50%{
+        transform: translate(0, 0);
+        }
+
+        75%{
+        transform: translate(1200px,0px);
+        }
+
+        100%{
+        transform: translate(1200px, 690px);
+        }
+
+    }
+
+        .game{
+            animation: goodgames 7s cubic-bezier(0.98,-0.44, 0, 1.47) infinite;
+            position:relative;
+        }
+
+        @keyframes goodgames{
+        0% {
+         transform: translate(1400px, 500px); 
+         }
+        25% {
+        transform: translate(0,500px); 
+        }
+
+        50%{
+        transform: translate(0, 0);
+        }
+
+        75%{
+        transform: translate(1400px,0px);
+        }
+
+        100%{
+        transform: translate(1400px, 500px);
+        }
+    
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="harry">
+     <img src="Harry potter.png" height="170px" width="400px">  
+     
+    
+      </div>
+      <div class="game">
+      <img src="actual.png" height="160px" width="120px">
+      </div>
+</body>
+</html>
